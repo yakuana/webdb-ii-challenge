@@ -7,7 +7,6 @@ exports.up = function(knex) {
         // VIN: string of 17 characters, unique, required (not null)
         tbl
             .string('vin', 17)
-            .min(17)
             .unique()
             .notNullable();
     
