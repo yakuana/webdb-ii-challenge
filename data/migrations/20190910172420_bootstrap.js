@@ -24,6 +24,14 @@ exports.up = function(knex) {
         tbl
             .integer('mileage')
             .notNullable();
+
+        // status: string, optional 
+        tbl 
+            .string('status')
+        
+        // transmission type: optional 
+        tbl 
+            .string('transmission type')
     });
 };
 
